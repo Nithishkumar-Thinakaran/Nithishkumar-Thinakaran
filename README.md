@@ -110,16 +110,16 @@ print(me.motto())
 
 ---
 
-## 🏅 Achievements & Certifications
+## 🏅 Certifications
 
 <div align="center">
 
-| 🏆 | Achievement | Details |
+| 🏆 | Certificate | Details |
 |:---:|:------------|:--------|
+| 🌐 | **Networking** | STC Skills · Mar 2026 |
+| 📊 | **Data Analysis with Python** | freeCodeCamp · May 2025 |
 | 🐍 | **Python Essentials 1** | CISCO Networking Academy — May 2025 |
 | 🎨 | **AI Presentation Design** | Mastering Presentations with AI — Scrollwell, Oct 2023 |
-| 🤖 | **ML Research Project** | Built a real-world prosthetic AI system using Histogram Gradient Boosting |
-| 💳 | **Payment Integration** | Razorpay gateway integration in production full-stack application |
 
 </div>
 
