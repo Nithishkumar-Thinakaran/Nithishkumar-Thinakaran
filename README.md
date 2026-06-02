@@ -116,8 +116,6 @@ print(me.motto())
 
 | 🏆 | Achievement | Details |
 |:---:|:------------|:--------|
-| 🎓 | **M.Sc. Computer Science** | CGPA: **9.5 / 10** — SRM Institute of Science and Technology, KTR |
-| 🎓 | **B.Sc. Computer Science** | CGPA: **8.44 / 10** — Bishop Heber College, Tiruchirappalli |
 | 🐍 | **Python Essentials 1** | CISCO Networking Academy — May 2025 |
 | 🎨 | **AI Presentation Design** | Mastering Presentations with AI — Scrollwell, Oct 2023 |
 | 🤖 | **ML Research Project** | Built a real-world prosthetic AI system using Histogram Gradient Boosting |
@@ -135,8 +133,6 @@ print(me.motto())
 |:-------|:------------|:----:|:-----:|
 | 🎓 M.Sc. Computer Science | SRM Institute of Science and Technology, KTR | 2023 – 2025 | CGPA: 9.5 |
 | 🎓 B.Sc. Computer Science | Bishop Heber College, Tiruchirappalli | 2020 – 2023 | CGPA: 8.44 |
-| 📘 Class XII (State Board) | MSP Solai Nadar Memorial HSS, Dindigul | 2019 – 2020 | 68.0% |
-| 📗 Class X (State Board) | MSP Solai Nadar Memorial HSS, Dindigul | 2017 – 2018 | 78.0% |
 
 </div>
 
