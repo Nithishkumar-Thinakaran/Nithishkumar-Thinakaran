@@ -6,8 +6,7 @@
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=Nithishkumar-Thinakaran&label=Profile Views&color=70A5FD&style=flat-square" alt="Profile Views" />
-</div>
+<img src="https://komarev.com/ghpvc/?username=Nithishkumar-Thinakaran&label=Visitors&color=70A5FD&style=flat-square" alt="Profile Views" /></div>
 
 ---
 
