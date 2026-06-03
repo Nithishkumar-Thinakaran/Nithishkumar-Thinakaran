@@ -1,9 +1,14 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Nithishkumar+Thinakaran&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Full-Stack+Developer+%7C+MERN+%7C+Python+%7C+ML+Enthusiast&descAlignY=62&descSize=16" width="100%"/>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Nithishkumar-Thinakaran&label=Visitors&color=70A5FD&style=for-the-badge" />
-  <img src="https://img.shields.io/github/followers/Nithishkumar-Thinakaran?label=Followers&style=for-the-badge&color=70A5FD" />
-</p>
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Hey+there%2C+I'm+Nithish+%F0%9F%91%8B;Full-Stack+Web+Developer+%7C+MERN+Stack;Python+%7C+ML+%7C+REST+APIs;Building+secure+%26+scalable+apps" alt="Typing SVG" />
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=Nithishkumar-Thinakaran&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
+
+</div>
 
 ---
 
