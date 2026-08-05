@@ -68,21 +68,10 @@
 
 
 
-<a href="https://github.com/Nithishkumar-Thinakaran">
-  <img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=white&labelColor=0A101F" alt="GitHub" />
-</a>
-
-
-
 <a href="https://nithishkumar02.netlify.app/">
   <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=googlechrome&logoColor=A78BFA&labelColor=0A101F" alt="Portfolio" />
 </a>
 
-
-
-<a href="mailto:nithishkumarnk02@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
-</a>
 
 </div>
 
