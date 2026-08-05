@@ -66,7 +66,7 @@
 
 
 <a href="https://www.linkedin.com/in/nithishkumar-1007a025b">
-  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE&labelColor=0A101F" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" />
 </a>
 
 
