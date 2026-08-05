@@ -58,27 +58,41 @@
 
 <br/>
 
+<!-- ===== SOCIAL BADGES ===== -->
+
 <div align="center">
 
+<table>
+<tr>
+
+<td>
 <a href="https://github.com/Nithishkumar-Thinakaran">
-  <img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=white&labelColor=0A101F" alt="GitHub" />
+<img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=white&labelColor=0A101F"/>
 </a>
+</td>
 
-
+<td>
 <a href="https://www.linkedin.com/in/nithishkumar-1007a025b">
-  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE&labelColor=0A101F"/>
 </a>
+</td>
 
-
+<td>
 <a href="https://nithishkumar02.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=googlechrome&logoColor=A78BFA&labelColor=0A101F" alt="Portfolio" />
+<img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=googlechrome&logoColor=A78BFA&labelColor=0A101F"/>
 </a>
+</td>
 
-
+<td>
 <a href="mailto:nithishkumarnk02@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
+<img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F"/>
 </a>
+</td>
+
+</tr>
+</table>
 
 </div>
 
+<!-- ===== END SOCIAL BADGES ===== -->
 <!-- ===== END SOCIAL BADGES ===== -->
