@@ -74,17 +74,16 @@ def rel_time(iso):
     except Exception:
         return "n/a"
 
-def load_logo_b64(path):
-    if not path: return None
-    for base in ("logos", "."):
-        p = os.path.join(base, path)
-        if os.path.exists(p):
-            ext = os.path.splitext(p)[1].lower()
-            mime = {"png":"image/png","svg":"image/svg+xml","jpg":"image/jpeg",
-                    "jpeg":"image/jpeg","webp":"image/webp"}.get(ext[1:], "image/png")
-            with open(p, "rb") as f:
-                return f"data:{mime};base64," + base64.b64encode(f.read()).decode()
-    return None
+def load_logo(path):
+    if not path:
+        return None
+
+    return (
+        "https://raw.githubusercontent.com/"
+        "Nithishkumar-Thinakaran/"
+        "Nithishkumar-Thinakaran/main/logos/"
+        + path
+    )
 
 def wrap_text(s, max_chars, max_lines=2):
     words = s.split()
@@ -164,7 +163,7 @@ def card(p, x, y, idx):
         a(f'<circle cx="{CARD_W-16}" cy="15" r="3.5" fill="{DIM}"/>')
 
     # logo (base64) or fallback monogram — with a gentle vertical float
-    logo = p.get("_logo_b64")
+    logo = p.get("_logo")
     float_anim = (f'<animateTransform attributeName="transform" type="translate" '
                   f'values="0 0; 0 -2.5; 0 0" dur="5s" begin="{b+idx*0.5:.2f}s" '
                   f'repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" '
@@ -173,34 +172,60 @@ def card(p, x, y, idx):
         a(f'''
         <g>
             {float_anim}
-            <clipPath id="clip{idx}">
-                <circle cx="496" cy="84" r="38"/>
-            </clipPath>
 
+            <defs>
+                <clipPath id="clip{idx}">
+                    <circle cx="36" cy="64" r="20"/>
+                </clipPath>
+            </defs>
+
+            <!-- Border -->
             <circle
-                cx="496"
-                cy="84"
-                r="40"
+                cx="36"
+                cy="64"
+                r="21"
                 fill="none"
                 stroke="{CYAN}"
                 stroke-width="2"
             />
 
+            <!-- Logo -->
             <image
-                x="456"
-                y="44"
-                width="80"
-                height="80"
                 href="{logo}"
+                x="16"
+                y="44"
+                width="40"
+                height="40"
                 preserveAspectRatio="xMidYMid slice"
                 clip-path="url(#clip{idx})"
             />
+
         </g>
         ''')
     else:
         initial = esc((p.get("name") or "?")[0].upper())
-        a(f'<g>{float_anim}<rect x="16" y="44" width="40" height="40" rx="9" fill="{VIOLET2}" opacity="0.9"/>'
-          f'<text x="36" y="71" text-anchor="middle" font-size="20" font-weight="700" fill="{MONO_TX}">{initial}</text></g>')
+        a(f'''
+        <g>
+            {float_anim}
+            <rect
+                x="16"
+                y="44"
+                width="40"
+                height="40"
+                rx="20"
+                fill="{VIOLET2}"
+            />
+            <text
+                x="36"
+                y="70"
+                text-anchor="middle"
+                font-size="20"
+                font-weight="700"
+                fill="{MONO_TX}">
+                {initial}
+            </text>
+        </g>
+        ''')
 
     # name + blinking cursor
     name = esc(p.get("name", "unnamed"))
@@ -257,7 +282,7 @@ if __name__ == "__main__":
     with open(src) as f:
         projects = json.load(f)
     for p in projects:
-        p["_logo_b64"] = load_logo_b64(p.get("logo"))
+         p["_logo"] = load_logo(p.get("logo"))
     for theme, fname in (("dark", "projects.svg"), ("light", "projects-light.svg")):
         set_theme(theme)
         svg = build(projects, theme)
