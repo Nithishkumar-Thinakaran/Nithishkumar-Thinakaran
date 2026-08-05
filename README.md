@@ -70,7 +70,7 @@
   <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE&labelColor=0A101F" alt="LinkedIn" />
 </a>
 
-&nbsp;&nbsp;
+&nbsp;
 
 <a href="https://nithishkumar02.netlify.app/">
   <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=googlechrome&logoColor=A78BFA&labelColor=0A101F" alt="Portfolio" />
