@@ -2,42 +2,42 @@
   {
     "name": "HCP CRM",
     "repo": "https://github.com/Nithishkumar-Thinakaran/hcp-crm",
-    "logo": "hcp_crm.png",
+    "logo": "hcp_crm.jpeg",
     "description": "Healthcare CRM for managing leads and patient data.",
     "tags": ["React", "Node.js", "MongoDB"]
   },
   {
     "name": "AI CSV Importer",
     "repo": "https://github.com/Nithishkumar-Thinakaran/groweasy-csv-importer",
-    "logo": "csv_importer.png",
+    "logo": "csv_importer.jpeg",
     "description": "AI-powered CSV importer with intelligent field mapping.",
     "tags": ["Next.js", "Node.js", "Gemini"]
   },
   {
     "name": "Note Share",
     "repo": "https://github.com/Nithishkumar-Thinakaran/notes-app",
-    "logo": "note_share.png",
+    "logo": "note_share.jpeg",
     "description": "Platform for sharing and organizing study notes.",
     "tags": ["React", "Express", "MongoDB"]
   },
   {
     "name": "Hyper Service Marketplace",
     "repo": "https://github.com/Nithishkumar-Thinakaran/Hyperlocal-Service-Marketplace",
-    "logo": "hyper.png",
+    "logo": "hyper.jpeg",
     "description": "MERN service booking platform with payments.",
     "tags": ["React", "Express", "MongoDB"]
   },
   {
     "name": "Biomimetic Prosthetic Advancement",
     "repo": "https://github.com/Nithishkumar-Thinakaran/Biomimetic_Prosthetics",
-    "logo": "prosthetic.png",
+    "logo": "prosthetic.jpeg",
     "description": "AI system for personalized prosthetic optimization.",
     "tags": ["Python", "FastAPI", "ML"]
   },
   {
     "name": "Amazon Echo Reviews NLP",
     "repo": "https://github.com/Nithishkumar-Thinakaran/Amazon-Echo-NLP",
-    "logo": "amazon.png",
+    "logo": "amazon.jpeg",
     "description": "Sentiment analysis of Amazon Echo reviews.",
     "tags": ["Python", "NLP", "ML"]
   }
