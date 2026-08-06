@@ -191,29 +191,31 @@ def card(p, x, y, idx):
             {float_anim}
 
             <clipPath id="clip{idx}">
-    <circle cx="48" cy="72" r="34"/>
+    <circle cx="56" cy="84" r="44"/>
 </clipPath>
 
+<!-- Border -->
 <circle
-    cx="48"
-    cy="72"
-    r="35"
+    cx="56"
+    cy="84"
+    r="45"
     fill="none"
     stroke="{CYAN}"
     stroke-width="2"
 />
 
+<!-- Logo -->
 <image
     href="{logo}"
     x="12"
-    y="36"
-    width="72"
-    height="72"
+    y="40"
+    width="88"
+    height="88"
     preserveAspectRatio="xMidYMid meet"
     clip-path="url(#clip{idx})"
 />
         </g>
-        ''')
+        ''')            
 
     else:
         initial = esc((p.get("name") or "?")[0].upper())
