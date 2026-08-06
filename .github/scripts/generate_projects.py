@@ -190,29 +190,31 @@ def card(p, x, y, idx):
         <g>
             {float_anim}
 
-            <clipPath id="clip{idx}">
-    <circle cx="60" cy="88" r="48"/>
+<clipPath id="clip{idx}">
+    <circle cx="500" cy="84" r="48"/>
 </clipPath>
 
+<!-- Border -->
 <circle
-    cx="60"
-    cy="88"
+    cx="500"
+    cy="84"
     r="49"
     fill="none"
     stroke="{CYAN}"
     stroke-width="2"
 />
 
+<!-- Logo -->
 <image
     href="{logo}"
-    x="12"
-    y="40"
+    x="452"
+    y="36"
     width="96"
     height="96"
     preserveAspectRatio="xMidYMid meet"
     clip-path="url(#clip{idx})"
-/>
-        </g>
+/>        
+</g>
         ''')            
 
     else:
