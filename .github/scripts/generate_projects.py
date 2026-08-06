@@ -194,7 +194,15 @@ def card(p, x, y, idx):
                 <circle cx="500" cy="84" r="48"/>
             </clipPath>
 
-            
+            <!-- Border -->
+            <circle
+                cx="500"
+                cy="84"
+                r="49"
+                fill="none"
+                stroke="{CYAN}"
+                stroke-width="2"
+            />
 
             <!-- Logo -->
             <image
