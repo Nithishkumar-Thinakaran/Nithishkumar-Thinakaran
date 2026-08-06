@@ -198,9 +198,9 @@ def card(p, x, y, idx):
 
             <!-- Circular Border -->
             <circle
-                cx="36"
-                cy="64"
-                r="21"
+                cx="40"
+                cy="68"
+                r="24"
                 fill="none"
                 stroke="{CYAN}"
                 stroke-width="2"
