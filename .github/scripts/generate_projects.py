@@ -187,33 +187,31 @@ def card(p, x, y, idx):
                   f'keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>')
     if logo:
         a(f'''
-        <defs>
-            <clipPath id="clip{idx}">
-                <circle cx="36" cy="64" r="20"/>
-            </clipPath>
-        </defs>
-
         <g>
             {float_anim}
 
-            <!-- Circular Border -->
+            <clipPath id="clip{idx}">
+                <circle cx="44" cy="70" r="30"/>
+            </clipPath>
+
+            <!-- Border -->
             <circle
-                cx="40"
-                cy="68"
-                r="24"
+                cx="44"
+                cy="70"
+                r="31"
                 fill="none"
                 stroke="{CYAN}"
                 stroke-width="2"
             />
 
-            <!-- Project Logo -->
+            <!-- Logo -->
             <image
                 href="{logo}"
-                x="12"
+                x="14"
                 y="40"
-                width="48"
-                height="48"
-                preserveAspectRatio="xMidYMid slice"
+                width="60"
+                height="60"
+                preserveAspectRatio="xMidYMid meet"
                 clip-path="url(#clip{idx})"
             />
         </g>
