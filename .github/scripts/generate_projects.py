@@ -209,10 +209,10 @@ def card(p, x, y, idx):
             <!-- Project Logo -->
             <image
                 href="{logo}"
-                x="16"
-                y="44"
-                width="40"
-                height="40"
+                x="12"
+                y="40"
+                width="48"
+                height="48"
                 preserveAspectRatio="xMidYMid slice"
                 clip-path="url(#clip{idx})"
             />
