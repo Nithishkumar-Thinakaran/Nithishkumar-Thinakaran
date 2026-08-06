@@ -74,16 +74,33 @@ def rel_time(iso):
     except Exception:
         return "n/a"
 
+import base64
+import os
+
 def load_logo(path):
     if not path:
         return None
 
-    return (
-        "https://raw.githubusercontent.com/"
-        "Nithishkumar-Thinakaran/"
-        "Nithishkumar-Thinakaran/main/logos/"
-        + path
-    )
+    file_path = os.path.join("logos", path)
+
+    if not os.path.exists(file_path):
+        print(f"Logo not found: {file_path}")
+        return None
+
+    ext = os.path.splitext(file_path)[1].lower()
+
+    mime = {
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".svg": "image/svg+xml",
+        ".webp": "image/webp",
+    }.get(ext, "image/png")
+
+    with open(file_path, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode("ascii")
+
+    return f"data:{mime};base64,{encoded}"
 
 def wrap_text(s, max_chars, max_lines=2):
     words = s.split()
@@ -170,16 +187,16 @@ def card(p, x, y, idx):
                   f'keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>')
     if logo:
         a(f'''
+        <defs>
+            <clipPath id="clip{idx}">
+                <circle cx="36" cy="64" r="20"/>
+            </clipPath>
+        </defs>
+
         <g>
             {float_anim}
 
-            <defs>
-                <clipPath id="clip{idx}">
-                    <circle cx="36" cy="64" r="20"/>
-                </clipPath>
-            </defs>
-
-            <!-- Border -->
+            <!-- Circular Border -->
             <circle
                 cx="36"
                 cy="64"
@@ -189,7 +206,7 @@ def card(p, x, y, idx):
                 stroke-width="2"
             />
 
-            <!-- Logo -->
+            <!-- Project Logo -->
             <image
                 href="{logo}"
                 x="16"
@@ -199,34 +216,36 @@ def card(p, x, y, idx):
                 preserveAspectRatio="xMidYMid slice"
                 clip-path="url(#clip{idx})"
             />
-
         </g>
         ''')
+
     else:
         initial = esc((p.get("name") or "?")[0].upper())
+
         a(f'''
         <g>
             {float_anim}
-            <rect
-                x="16"
-                y="44"
-                width="40"
-                height="40"
-                rx="20"
+
+            <!-- Default Circular Avatar -->
+            <circle
+                cx="36"
+                cy="64"
+                r="20"
                 fill="{VIOLET2}"
             />
+
             <text
                 x="36"
-                y="70"
+                y="64"
                 text-anchor="middle"
-                font-size="20"
+                dominant-baseline="middle"
+                font-size="18"
                 font-weight="700"
                 fill="{MONO_TX}">
                 {initial}
             </text>
         </g>
         ''')
-
     # name + blinking cursor
     name = esc(p.get("name", "unnamed"))
     a(f'<text x="68" y="61" font-size="17" font-weight="700" fill="{TEXT}">{name}'
