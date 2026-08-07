@@ -11,10 +11,6 @@
 
 <div align="center">
 
-<!-- Streak -->
-
-
-<br/>
 
 <!-- GitHub Stats -->
 <picture>
