@@ -7,7 +7,7 @@
     "tags": ["React", "Node.js", "MongoDB"]
   },
   {
-    "name": "AI CSV Importer",
+    "name": "AI-Powered CSV Importer",
     "repo": "https://github.com/Nithishkumar-Thinakaran/groweasy-csv-importer",
     "logo": "csv_importer.jpeg",
     "description": "AI-powered CSV importer with intelligent field mapping.",
